@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>crystalsColletors</title>		
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+<div class="container">
+	<div id="name">
+	  	<h3>Crystals Collector</h3>
+	</div>
+	<div id="directions">
+		<p>You will be given a rendom number at the start of the game.</p>
+		<p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
+		<p>You will win the game by matching your total score to a random number, you lose the game if your total scpre goes above the ramdom number.</p>
+		<p>The value of each crystal is hidden from you until you click on it.</p>
+		<p>Each time when the gane starts, the game will change the values of each crystal</p>
+	</div>
+	<div class = "gameScore"> 
+		<div id="computerNumber">
+			<h3>###</h3>
+		</div>
+		<div id="winsLosses">
+			<p>Wins: 0</p>
+			<p>Losses: 0 </p>
+		</div>
+
+	</div>
+
+	<div id="crystalsIcons">
+		<img src="assets/images/red.png">
+		<img src="assets/images/blue.png">
+		<img src="assets/images/yellow.png">
+		<img src="assets/images/green.png">
+		
+	</div>
+
+	<div id="totalScoreHeadline">
+		<p>Your total score is:</p>
+	</div>
+
+	<div id="totalScore">
+		<h2>0</h2>
+	</div>
+</div>
+
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
