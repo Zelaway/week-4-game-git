@@ -50,7 +50,7 @@ function gemsNumber() {
 
 
 
-function gemClick (){
+function gemClick (){  //function adds the click choices togetther and diplays on html
 		$("#red").click(function(){
 			totalScore = gems.red+totalScore;
 			$("#currentScore").html(totalScore);
@@ -80,7 +80,7 @@ function gemClick (){
 
 
 
-function winsLosses(){
+function winsLosses(){ //counts wins and losses
 	if (totalScore === randomNumber){
 		alert("You Win!");
 		wins++;
