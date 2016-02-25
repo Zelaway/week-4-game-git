@@ -6,11 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">	
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
 </head>
 <body>
 <div class="container">
 	<div id="name">
-	  	<h3>Crystals Collector</h3>
+	  	<h3>Crystals Collector!</h3>
 	</div>
 	<div id="directions">
 		<p>You will be given a rendom number at the start of the game.</p>
@@ -24,17 +25,17 @@
 			<h3>###</h3>
 		</div>
 		<div id="winsLosses">
-			<p>Wins: 0</p>
+			<p>Wins:&nbsp;&nbsp;&nbsp;0</p>
 			<p>Losses: 0 </p>
 		</div>
 
 	</div>
 
-	<div id="crystalsIcons">
-		<img src="assets/images/red.png">
-		<img src="assets/images/blue.png">
-		<img src="assets/images/yellow.png">
-		<img src="assets/images/green.png">
+	<div class="crystalsIcons">
+		<img id ="red" src="assets/images/red.png" width="60" height="60">
+		<img id ="blue" src="assets/images/blue.png"width="60" height="60">
+		<img id ="yellow"src="assets/images/yellow.png" width="60" height="60">
+		<img id ="green" src="assets/images/green.png" width="60" height="60">
 		
 	</div>
 
@@ -42,10 +43,12 @@
 		<p>Your total score is:</p>
 	</div>
 
-	<div id="totalScore">
+	<div id="currentScore">
 		<h2>0</h2>
 	</div>
 </div>
+
+<script src="assets/javascript/game.js"></script>
 
 <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>

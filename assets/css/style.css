@@ -2,5 +2,66 @@ body{
 	background-image: url("../images/background_img.jpg");
 }
 #container{
-	background-image: url("../images/background_img.jpg.jpg");
+	position: fixed;
+	width: 940px;
+	left: 10%;
+}
+#name{
+	position: fixed;
+	top: 5%;
+	padding: 10%, 10%, 10%, 10%;
+	background-color: #B8860B;
+	width: 25%;
+	font-size: 25px;
+	color: white;
+}
+#directions{
+	position: fixed;
+	top: 15%;
+	background-color: #FFE4C4;
+	width: 60%;
+	font-size: 12px;
+	color: green;
+	font-weight: bold;
+	line-height: 150%;
+}
+
+#computerNumber{
+	position: fixed;
+	top: 45%;
+	padding: 1px 27% 61px 0;
+	background-color: #9ACD32;
+}
+
+#winsLosses{
+	position: fixed;
+	top:45%;
+	left: 35%;
+	padding: 15px 2px 15px 2px;
+	line-height: 150%;
+	background-color: #00FFFF;
+
+}
+
+.crystalsIcons{
+	position: fixed;
+	float: left;
+	top:60%;
+}
+
+#totalScoreHeadline{
+	position: fixed;
+	width: 25%;
+	top: 75%;
+	background-color: #008B8B;
+	color: white;
+	font-size: 15px;
+}
+#currentScore{
+	position: fixed;
+	padding: 0 25% 15% 0;
+	top:80%;
+	font-size: 25px;
+	background-color: #008B8B;
+	color: white;
 }
