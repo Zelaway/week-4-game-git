@@ -2,7 +2,7 @@ console.log("this page works!");
 
 //Global Variables
 //-----------------------------------------------------
-//var randomNumber = 0;
+var randomNumber = 0;
 var gems= {
 	red: 0,
 	blue: 0,
@@ -52,7 +52,7 @@ function gemsNumber() {
 
 function gemClick (){
 		$("#red").click(function(){
-			gemsNumberRed = gems.red+totalScore;
+			totalScore = gems.red+totalScore;
 			$("#currentScore").html(totalScore);
 			console.log(totalScore);
 		});
@@ -73,6 +73,7 @@ function gemClick (){
 			console.log(totalScore);
 		});
 
+
 				
 
 };
@@ -80,7 +81,7 @@ function gemClick (){
 
 
 function winsLosses(){
-	if (totalScore === 0){
+	if (totalScore === randomNumber){
 		alert("You Win!");
 		wins++;
 		var winCount = "<p>Wins&nbsp;&nbsp;&nbsp;"+wins+"</p>" + "<p>Losses: 0 </p>";
