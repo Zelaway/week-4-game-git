@@ -26,6 +26,7 @@ function compRandomNumber () {  //function generates a random number and puts in
 randomNumber= Math.floor((Math.random() * 120) + 12);
 var compRandomNumber = "<h3>"+ randomNumber +"</h3>";
 document.querySelector("#computerNumber").innerHTML=compRandomNumber;
+totalScore= 0;
 //console.log (randomNumber);
 };
 
@@ -86,13 +87,16 @@ function gemClick (){  //function adds the click choices togetther and diplays o
 
 
 function winsLosses(){ //counts wins and losses
-	if (totalScore === randomNumber){
+	 if (totalScore === randomNumber){
 		alert("You Win!");
 		wins++;
+		console.log(wins);
 		var winCount = "<p>Wins&nbsp;&nbsp;&nbsp;"+wins+"</p>" + "<p>Losses: 0 </p>";
 		document.querySelector("#winsLosses").innerHTML=winCount;
 		alert("If you want to play again, just click the play Again Box");
 		$("#playAgain").click(function(){
+		var newTotalScore = "<h2>0</h2>";
+		document.querySelector("#currentScore").innerHTML=newTotalScore;
 		game();
 		});
 
@@ -104,17 +108,16 @@ function winsLosses(){ //counts wins and losses
 		document.querySelector("#winsLosses").innerHTML=lossCount;
 		alert("If you want to play again, just click the play Again Box");
 		$("#playAgain").click(function(){
+		var newTotalScore = "<h2>0</h2>";
+		document.querySelector("#currentScore").innerHTML=newTotalScore;
 		game();
 		});
 	}
 
 };
-
-
- 
-
 //functions for the game
 //---------------------------------------------------------------
+
 
 function game(){
 	totalScore = 0;
@@ -122,12 +125,11 @@ function game(){
 	compRandomNumber();
 	gemsNumber();
 	gemClick();
-	winsLosses();
+console.log(totalScore);
 
 }
 
 game();
-
 
 
 
