@@ -43,6 +43,16 @@ body{
 
 }
 
+#playAgain{
+	position: fixed;
+	top: 45%;
+	left: 45%;
+	line-height: 150%;
+	text-align: center;
+	padding: 15px 2px 15px 2px;
+	background-color: #9ACD32;
+}
+
 .crystalsIcons{
 	position: fixed;
 	float: left;
