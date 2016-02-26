@@ -91,7 +91,7 @@ function winsLosses(){ //counts wins and losses
 		alert("You Win!");
 		wins++;
 		console.log(wins);
-		var winCount = "<p>Wins&nbsp;&nbsp;&nbsp;"+wins+"</p>" + "<p>Losses: 0 </p>";
+		var winCount = "<p>Wins&nbsp;&nbsp;&nbsp;"+wins+"</p>" + "<p>Losses:" +losses+ "</p>";
 		document.querySelector("#winsLosses").innerHTML=winCount;
 		alert("If you want to play again, just click the play Again Box");
 		$("#playAgain").click(function(){
@@ -129,7 +129,7 @@ console.log(totalScore);
 }
 
 game();
-	gemClick();
+gemClick();
 
 
 
