@@ -124,12 +124,12 @@ function game(){
 	randomNumber = 0;
 	compRandomNumber();
 	gemsNumber();
-	gemClick();
 console.log(totalScore);
 
 }
 
 game();
+	gemClick();
 
 
 
